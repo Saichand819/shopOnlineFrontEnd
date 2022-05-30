@@ -1,0 +1,13 @@
+<div *ngIf="cart && cart.length!=0; else cartEmpty">
+    <div class="product-container" *ngFor="let product of cart; let productIndex =index">
+        <a [routerLink]="['/products',product.id]">
+          <h1 class="product-title">{{cart[productIndex].title}}</h1>
+        </a>
+        <p class="product-price">${{cart[productIndex].price}}</p>
+        <button class="remove-product" (click)="removeFromCart(productIndex)">Remove From Cart</button>
+    </div>
+    <button class="btn btn-primary" (click)="proceedToCheckOut()">Proceed To CheckOut</button>
+</div>
+<ng-template #cartEmpty>
+   <p>Cart is Empty</p>
+</ng-template>

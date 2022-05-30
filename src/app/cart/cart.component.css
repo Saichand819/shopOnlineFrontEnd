@@ -1,0 +1,22 @@
+
+.product-container{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.product-title{
+   font-size: 20px;
+}
+
+.product-price{
+    font-size: 18px;
+}
+
+.remove-product{
+    padding: 3px 5px;
+    background-color: #db4d5d;
+    border: 1px solid black;
+    border-radius: 5px;
+}

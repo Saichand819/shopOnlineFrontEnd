@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #1976d2;
+}
+.navbar{
+    display: flex;
+}
+.route{
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.heading{
+    font-size: 25px;
+    color: white;
+}
+span{
+    font-size: 30px;
+    color: #08cc5d;
+    font-style: italic;
+}
+.display-container{
+    width: 100%;
+    padding: 20px 30px ;
+}
+p{
+    margin-bottom: 0px;
+}
+
+.activeRouterLink{
+    background-color: white;
+    color: #1976d2;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 6px;
+    opacity: 1;
+}

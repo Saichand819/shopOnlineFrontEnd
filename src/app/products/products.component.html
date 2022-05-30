@@ -1,0 +1,14 @@
+<h1 style="font-size: 30px;font: sans-serif;">All Products In the Website</h1>
+<div style="border: 1px solid black; height: 100%;">
+<ag-grid-angular
+   style="width: 100%; height: 80vh;"
+   class="ag-theme-alpine"
+   [defaultColDef]="defaultColDef"
+   [columnDefs]="ColumnDefs"
+   [rowData]="productObservable | async"
+   [rowHeight]="50"
+   rowAnimation
+>
+
+</ag-grid-angular>
+</div>

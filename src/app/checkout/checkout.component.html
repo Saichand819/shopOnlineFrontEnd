@@ -1,0 +1,28 @@
+<div *ngIf="!checkoutDone;else something"> 
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td scope="col">Name Of Product</td>
+            <td scope="col">Price</td>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let product of cart" >
+           <th>{{product.title}}</th>
+           <th>${{product.price}}</th>
+        </tr>
+    </tbody>
+</table>
+<h2>Total Cost</h2>
+<p>$ {{totalPrice}}</p>
+<label>
+    Address
+   <input [(ngModel)]="address" type="text" style="width: 400px;" class="form-control" required #addressField/>
+</label>
+<br/>
+<button class="btn btn-warning mt-3 mb-3" (click)="proceedToCheckOut()">Order By Paying {{totalPrice}}</button>
+</div>
+
+<ng-template #something>
+   <p *ngIf="checkoutDone" class="alert alert-warning">Order Placed to Address {{address}}</p>
+</ng-template>
